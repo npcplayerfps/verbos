@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📚 Estudio Completo: Tiempos Verbales en Inglés</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #2c3e50;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    h1, h2, h3 {
+      color: #2980b9;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 8px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .grammar-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 0.95em;
+    }
+    .grammar-table th, .grammar-table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    .grammar-table th {
+      background-color: #2980b9;
+      color: white;
+    }
+    .grammar-table tr:nth-child(even) {
+      background-color: #f2f9ff;
+    }
+    .example-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto auto;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px dashed #eee;
+    }
+    .example-row:hover {
+      background-color: #f0f7ff;
+    }
+    .btn-audio {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .btn-audio:hover {
+      background: #2980b9;
+    }
+    .section-title {
+      font-size: 1.4em;
+      margin-top: 20px;
+      color: #2c3e50;
+    }
+    .note {
+      background-color: #fffacd;
+      padding: 10px;
+      border-left: 4px solid #f1c40f;
+      margin: 15px 0;
+      font-style: italic;
+      font-size: 0.95em;
+    }
+    @media (max-width: 768px) {
+      .example-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .btn-group {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><span role="img" aria-label="book">📘</span> Estudio Completo: Tiempos Verbales en Inglés</h1>
+  <p><strong>Instrucciones:</strong> Haz clic en los botones 🔊 para escuchar cada frase en inglés o español.</p>
+  <div id="loader" style="color: #e74c3c; font-style: italic;">Cargando voces del sistema...</div>
+
+  <!-- Sección 1: Present Simple -->
+  <div class="card">
+    <h2>🔹 1. Present Simple – Presente Simple</h2>
+    <p><strong>Uso:</strong> Hechos generales, rutinas, hábitos.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + V (I/You/We/They) | S + Vs (He/She/It)</td>
+        <td>I work. / She works.</td>
+        <td>Yo trabajo. / Ella trabaja.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + do/does + not + V</td>
+        <td>I don’t eat meat. / He doesn’t study.</td>
+        <td>No como carne. / Él no estudia.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Do/Does + S + V?</td>
+        <td>Do you like coffee? / Does she live here?</td>
+        <td>¿Te gusta el café? / ¿Ella vive aquí?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="present-simple"></div>
+  </div>
+
+  <!-- Sección 2: Past Simple -->
+  <div class="card">
+    <h2>🔹 2. Past Simple – Pasado Simple</h2>
+    <p><strong>Uso:</strong> Acciones completadas en el pasado.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + V2 (verbo en pasado)</td>
+        <td>I worked. / She went.</td>
+        <td>Trabajé. / Ella fue.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + did not (didn't) + V1</td>
+        <td>I didn’t eat. / He didn’t go.</td>
+        <td>No comí. / Él no fue.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Did + S + V1?</td>
+        <td>Did you call her? / Did they leave?</td>
+        <td>¿La llamaste? / ¿Se fueron ellos?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="past-simple"></div>
+  </div>
+
+  <!-- Sección 3: Future Simple -->
+  <div class="card">
+    <h2>🔹 3. Future Simple – Futuro Simple (will / going to)</h2>
+    <p><strong>Uso:</strong> Predicciones, planes, decisiones espontáneas.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + will / going to + V</td>
+        <td>I will help. / I’m going to travel.</td>
+        <td>Te ayudaré. / Voy a viajar.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + won’t / am not going to + V</td>
+        <td>He won’t come. / I’m not going to eat.</td>
+        <td>Él no vendrá. / No voy a comer.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Will / Are you going to + S + V?</td>
+        <td>Will you go? / Are you going to study?</td>
+        <td>¿Irás? / ¿Vas a estudiar?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="future-simple"></div>
+  </div>
+
+  <!-- Sección 4: Present Continuous -->
+  <div class="card">
+    <h2>🔹 4. Present Continuous – Presente Continuo</h2>
+    <p><strong>Uso:</strong> Acciones en progreso ahora o planes cercanos.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + am/is/are + V-ing</td>
+        <td>I am studying. / She is working.</td>
+        <td>Estoy estudiando. / Ella está trabajando.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + am/is/are + not + V-ing</td>
+        <td>We aren’t eating. / He isn’t sleeping.</td>
+        <td>No estamos comiendo. / Él no está durmiendo.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Am/Is/Are + S + V-ing?</td>
+        <td>Are you listening? / Is she coming?</td>
+        <td>¿Estás escuchando? / ¿Ella viene?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="present-continuous"></div>
+  </div>
+
+  <!-- Sección 5: Past Continuous -->
+  <div class="card">
+    <h2>🔹 5. Past Continuous – Pasado Continuo</h2>
+    <p><strong>Uso:</strong> Acción larga interrumpida por otra en el pasado.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + was/were + V-ing</td>
+        <td>I was studying. / They were playing.</td>
+        <td>Estaba estudiando. / Estaban jugando.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + was/were not + V-ing</td>
+        <td>She wasn’t listening. / We weren’t sleeping.</td>
+        <td>Ella no estaba escuchando. / No estábamos durmiendo.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Was/Were + S + V-ing?</td>
+        <td>Were you working? / Was he driving?</td>
+        <td>¿Estabas trabajando? / ¿Él conducía?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="past-continuous"></div>
+  </div>
+
+  <!-- Sección 6: Present Perfect -->
+  <div class="card">
+    <h2>🔹 6. Present Perfect – Presente Perfecto</h2>
+    <p><strong>Uso:</strong> Experiencias, acciones sin tiempo exacto, desde/hace.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + have/has + V3 (participio)</td>
+        <td>I have eaten. / She has left.</td>
+        <td>He comido. / Ella ha salido.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + haven’t/hasn’t + V3</td>
+        <td>I haven’t finished. / He hasn’t called.</td>
+        <td>No he terminado. / Él no ha llamado.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Have/Has + S + V3?</td>
+        <td>Have you seen it? / Has she arrived?</td>
+        <td>¿Lo has visto? / ¿Ella ha llegado?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="present-perfect"></div>
+  </div>
+
+  <!-- Sección 7: Future Continuous -->
+  <div class="card">
+    <h2>🔹 7. Future Continuous – Futuro Continuo</h2>
+    <p><strong>Uso:</strong> Acción en progreso en un momento futuro.</p>
+
+    <table class="grammar-table">
+      <tr><th>Forma</th><th>Estructura</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Afirmativa</strong></td>
+        <td>S + will be + V-ing</td>
+        <td>I will be sleeping at 10 PM.</td>
+        <td>Estaré durmiendo a las 10 PM.</td>
+      </tr>
+      <tr>
+        <td><strong>Negativa</strong></td>
+        <td>S + won’t be + V-ing</td>
+        <td>She won’t be working tomorrow.</td>
+        <td>Ella no estará trabajando mañana.</td>
+      </tr>
+      <tr>
+        <td><strong>Preguntas</strong></td>
+        <td>Will + S + be + V-ing?</td>
+        <td>Will you be studying at 8?</td>
+        <td>¿Estarás estudiando a las 8?</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="future-continuous"></div>
+  </div>
+
+  <!-- Sección 8: Comparación de Futuros -->
+  <div class="card">
+    <h2>🔹 8. Comparación de Futuros</h2>
+    <p><strong>Diferencias entre estructuras futuras.</strong></p>
+
+    <table class="grammar-table">
+      <tr><th>Estructura</th><th>Uso</th><th>Ejemplo (EN)</th><th>Ejemplo (ES)</th></tr>
+      <tr>
+        <td><strong>Will</strong></td>
+        <td>Decisión espontánea, promesa</td>
+        <td>I’ll answer the phone.</td>
+        <td>Atenderé el teléfono.</td>
+      </tr>
+      <tr>
+        <td><strong>Going to</strong></td>
+        <td>Plan ya decidido</td>
+        <td>I’m going to visit my grandma.</td>
+        <td>Voy a visitar a mi abuela.</td>
+      </tr>
+      <tr>
+        <td><strong>Present Continuous</strong></td>
+        <td>Plan confirmado (fecha/hora)</td>
+        <td>I’m meeting Ana at 6.</td>
+        <td>Me reúno con Ana a las 6.</td>
+      </tr>
+      <tr>
+        <td><strong>Present Simple</strong></td>
+        <td>Horarios fijos</td>
+        <td>The train leaves at 7.</td>
+        <td>El tren sale a las 7.</td>
+      </tr>
+    </table>
+
+    <div class="examples-list" id="future-comparison"></div>
+  </div>
+
+  <!-- Sección 9: Preguntas Comunes -->
+  <div class="card">
+    <h2>🔹 9. Preguntas Comunes y Respuestas</h2>
+    <p><strong>Útiles para conversaciones y exámenes orales.</strong></p>
+
+    <div class="examples-list" id="common-questions"></div>
+  </div>
+
+  <footer>
+    © 2025 Material de Estudio Bilingüe | Gramática + Audio + Práctica Oral
+  </footer>
+
+  <script>
+    // Variables globales
+    let vocesDisponibles = [];
+
+    // Cargar voces
+    function cargarVoces() {
+      vocesDisponibles = window.speechSynthesis.getVoices();
+      if (vocesDisponibles.length === 0) {
+        setTimeout(() => {
+          vocesDisponibles = window.speechSynthesis.getVoices();
+          document.getElementById('loader').textContent = "Voces cargadas. ¡Listo para usar!";
+          setTimeout(() => document.getElementById('loader').style.display = 'none', 1000);
+        }, 500);
+      } else {
+        document.getElementById('loader').textContent = "Voces cargadas. ¡Listo para usar!";
+        setTimeout(() => document.getElementById('loader').style.display = 'none', 1000);
+      }
+    }
+
+    // Reproducir voz
+    function reproducirVoz(texto, idioma = 'es') {
+      if (!window.speechSynthesis) return;
+
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.rate = 0.9;
+
+      if (idioma === 'en') {
+        utterance.lang = 'en-US';
+        const vozEn = vocesDisponibles.find(v => v.lang.includes('en')) || null;
+        if (vozEn) utterance.voice = vozEn;
+      } else {
+        utterance.lang = 'es-MX';
+        const vozElegida = vocesDisponibles.find(v => v.name.includes("Microsoft Sabina")) ||
+                           vocesDisponibles.find(v => v.lang.includes("es")) ||
+                           null;
+        if (vozElegida) utterance.voice = vozElegida;
+      }
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Datos completos con positive, negative, questions
+    const ejemplos = {
+      'present-simple': [
+        { en: "I work at a school.", es: "Trabajo en una escuela." },
+        { en: "She doesn’t like coffee.", es: "A ella no le gusta el café." },
+        { en: "Do you play guitar?", es: "¿Tocas la guitarra?" },
+        { en: "They go to church every Sunday.", es: "Van a la iglesia todos los domingos." },
+        { en: "He doesn’t watch TV.", es: "Él no ve televisión." },
+        { en: "Does she speak French?", es: "¿Habla francés?" }
+      ],
+      'past-simple': [
+        { en: "I visited my uncle last week.", es: "Visité a mi tío la semana pasada." },
+        { en: "She didn’t finish her project.", es: "Ella no terminó su proyecto." },
+        { en: "Did you see the movie?", es: "¿Viste la película?" },
+        { en: "We ate at a restaurant.", es: "Comimos en un restaurante." },
+        { en: "They didn’t go to the party.", es: "Ellos no fueron a la fiesta." },
+        { en: "Did he call you?", es: "¿Él te llamó?" }
+      ],
+      'future-simple': [
+        { en: "I will call you later.", es: "Te llamaré más tarde." },
+        { en: "She won’t come to the event.", es: "Ella no vendrá al evento." },
+        { en: "Will you help me?", es: "¿Me ayudarás?" },
+        { en: "I’m going to buy a new laptop.", es: "Voy a comprar una nueva laptop." },
+        { en: "I’m not going to eat meat.", es: "No voy a comer carne." },
+        { en: "Are you going to travel?", es: "¿Vas a viajar?" }
+      ],
+      'present-continuous': [
+        { en: "I am reading a book.", es: "Estoy leyendo un libro." },
+        { en: "She isn’t working today.", es: "Ella no está trabajando hoy." },
+        { en: "Are you listening to music?", es: "¿Estás escuchando música?" },
+        { en: "They are playing football.", es: "Están jugando fútbol." },
+        { en: "We aren’t cooking dinner.", es: "No estamos cocinando la cena." },
+        { en: "Is he coming with us?", es: "¿Viene él con nosotros?" }
+      ],
+      'past-continuous': [
+        { en: "I was studying when you called.", es: "Estaba estudiando cuando llamaste." },
+        { en: "She wasn’t sleeping at 11 PM.", es: "Ella no estaba durmiendo a las 11 PM." },
+        { en: "Were you watching TV?", es: "¿Estabas viendo televisión?" },
+        { en: "They were dancing at the party.", es: "Estaban bailando en la fiesta." },
+        { en: "He wasn’t driving carefully.", es: "Él no conducía con cuidado." },
+        { en: "Was she working?", es: "¿Ella estaba trabajando?" }
+      ],
+      'present-perfect': [
+        { en: "I have finished my homework.", es: "He terminado mi tarea." },
+        { en: "She hasn’t seen that film.", es: "Ella no ha visto esa película." },
+        { en: "Have you ever been to Canada?", es: "¿Alguna vez has estado en Canadá?" },
+        { en: "We have lived here since 2019.", es: "Vivimos aquí desde 2019." },
+        { en: "They haven’t called yet.", es: "Ellos no han llamado aún." },
+        { en: "Has he arrived?", es: "¿Ha llegado él?" }
+      ],
+      'future-continuous': [
+        { en: "I will be sleeping at midnight.", es: "Estaré durmiendo a la medianoche." },
+        { en: "She won’t be working tomorrow morning.", es: "Ella no estará trabajando mañana por la mañana." },
+        { en: "Will you be studying at 8 PM?", es: "¿Estarás estudiando a las 8 PM?" },
+        { en: "They will be traveling next week.", es: "Ellos estarán viajando la próxima semana." },
+        { en: "I won’t be eating dinner with you.", es: "No estaré cenando contigo." },
+        { en: "Will he be waiting for us?", es: "¿Él nos estará esperando?" }
+      ],
+      'future-comparison': [
+        { en: "I’ll help you now!", es: "¡Te ayudaré ahora!" },
+        { en: "I’m going to start a business.", es: "Voy a empezar un negocio." },
+        { en: "I’m meeting my boss at 3 PM.", es: "Me reúno con mi jefe a las 3 PM." },
+        { en: "The concert starts at 9.", es: "El concierto empieza a las 9." }
+      ],
+      'common-questions': [
+        { en: "What do you do every day?", es: "¿Qué haces todos los días?" },
+        { en: "I study and cook every morning.", es: "Estudio y cocino todas las mañanas." },
+        { en: "What didn’t you like about the movie?", es: "¿Qué no te gustó de la película?" },
+        { en: "Did you go out last weekend?", es: "¿Saliste el fin de semana pasado?" },
+        { en: "Are you doing anything tonight?", es: "¿Haces algo esta noche?" },
+        { en: "Have you ever tried sushi?", es: "¿Alguna vez has probado sushi?" },
+        { en: "Will you be free tomorrow?", es: "¿Estarás libre mañana?" },
+        { en: "Where have you been?", es: "¿Dónde has estado?" }
+      ]
+    };
+
+    // Generar filas dinámicas
+    Object.keys(ejemplos).forEach(seccionId => {
+      const contenedor = document.getElementById(seccionId);
+      const lista = ejemplos[seccionId];
+
+      lista.forEach(par => {
+        const row = document.createElement('div');
+        row.className = 'example-row';
+        row.innerHTML = `
+          <div><strong>${par.en}</strong></div>
+          <div>${par.es}</div>
+          <button class="btn-audio" onclick="reproducirVoz('${par.en}', 'en')" title="Escuchar en inglés">🔊 EN</button>
+          <button class="btn-audio" onclick="reproducirVoz('${par.es}', 'es')" title="Escuchar en español">🔊 ES</button>
+        `;
+        contenedor.appendChild(row);
+      });
+    });
+
+    // Cargar voces
+    window.speechSynthesis.onvoiceschanged = cargarVoces;
+    cargarVoces();
+  </script>
+</body>
+</html>
